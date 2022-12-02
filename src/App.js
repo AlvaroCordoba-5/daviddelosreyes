@@ -1,24 +1,34 @@
 import logo from './logo.svg';
 import './App.css';
+import Video from '../src/videoportada.mp4'
 
 function App() {
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+
+    <div className='header'>
+        <video  autoplay='autoplay' muted loop   id="vid">
+         <source type="video/mp4" src={Video} ></source>
+         
+</video>
+        
+          <div className='name'>
+        <h1>David De Los Reyes</h1>
+        <h4>-Parapsicologo-</h4>
+        </div> 
+      
+   </div>
+        
+ 
+
+<div className='ytvideo'>
+
+<iframe  src="https://www.youtube.com/embed/fzcweyZXUgs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+
+    </>
   );
 }
 
